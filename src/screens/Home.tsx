@@ -21,6 +21,14 @@ export const Home = () => {
         onPress={() => navigate('SyncedFlatLists')}
         style={styles.button}
       />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'ScrollItemAnimation'}
+        onPress={() => navigate('ScrollItemAnimation')}
+        style={styles.button}
+      />
     </View>
   )
 }

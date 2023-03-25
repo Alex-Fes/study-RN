@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StyleSheet, View } from 'react-native'
 
 import { Home } from './Home'
+import { ScrollItemAnimation } from './ScrollItemAnimation/ScrollItemAnimation'
 import { SyncedFlatLists } from './SyncedFlatLists/SyncedFlatLists'
 import { RootStackType } from './types'
 
@@ -15,6 +16,7 @@ export const Main = () => {
       <Stack.Navigator>
         <Stack.Screen name={'Home'} component={Home} />
         <Stack.Screen name={'SyncedFlatLists'} component={SyncedFlatLists} />
+        <Stack.Screen name={'ScrollItemAnimation'} component={ScrollItemAnimation} />
       </Stack.Navigator>
     </View>
   )
