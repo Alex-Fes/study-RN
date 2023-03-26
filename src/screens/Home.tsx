@@ -29,6 +29,14 @@ export const Home = () => {
         onPress={() => navigate('ScrollItemAnimation')}
         style={styles.button}
       />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'CarouselAnimation'}
+        onPress={() => navigate('CarouselAnimation')}
+        style={styles.button}
+      />
     </View>
   )
 }
@@ -36,6 +44,7 @@ export const Home = () => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
+    marginTop: 60,
   },
   button: {
     paddingHorizontal: PADDING,
