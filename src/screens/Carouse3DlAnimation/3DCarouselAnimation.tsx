@@ -14,8 +14,7 @@ import {
   View,
 } from 'react-native'
 
-import { HEIGHT, WIDTH } from '../../constants/constants'
-import { Main } from '../Main'
+import { WIDTH } from '../../constants/constants'
 
 const IMAGE_WIDTH = WIDTH * 0.65
 const IMAGE_HEIGHT = IMAGE_WIDTH * 0.7
@@ -96,7 +95,7 @@ export const Carousel3DAnimation = () => {
   const scrollX = useRef(new Animated.Value(0)).current
   const progress = Animated.modulo(Animated.divide(scrollX, WIDTH), WIDTH)
   const [index, setIndex] = useState(0)
-  const ref1 = useRef<FlatList<DATAType> | null>()
+  const ref1 = useRef<FlatList>(null)
 
   const renderItem: ListRenderItem<DATAType> = ({ item, index }) => {
     const inputRange = [(index - 1) * WIDTH, index * WIDTH, (index + 1) * WIDTH]
@@ -131,7 +130,7 @@ export const Carousel3DAnimation = () => {
       <SafeAreaView style={{ marginTop: SPACING * 4 }}>
         <View style={{ height: IMAGE_HEIGHT * 2.1 }}>
           <Animated.FlatList
-            ref={ref => (ref1.current = ref)}
+            ref={ref1}
             data={DATA}
             renderItem={renderItem}
             style={{ flexGrow: 0, zIndex: 9999 }}
