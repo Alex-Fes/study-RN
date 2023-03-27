@@ -37,6 +37,14 @@ export const Home = () => {
         onPress={() => navigate('CarouselAnimation')}
         style={styles.button}
       />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'Carouse3DlAnimation'}
+        onPress={() => navigate('Carouse3DlAnimation')}
+        style={styles.button}
+      />
     </View>
   )
 }

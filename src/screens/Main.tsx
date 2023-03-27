@@ -3,6 +3,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StyleSheet, View } from 'react-native'
 
+import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
 import { Home } from './Home'
 import { ScrollItemAnimation } from './ScrollItemAnimation/ScrollItemAnimation'
@@ -19,6 +20,7 @@ export const Main = () => {
         <Stack.Screen name={'SyncedFlatLists'} component={SyncedFlatLists} />
         <Stack.Screen name={'ScrollItemAnimation'} component={ScrollItemAnimation} />
         <Stack.Screen name={'CarouselAnimation'} component={CarouselAnimation} />
+        <Stack.Screen name={'Carouse3DlAnimation'} component={Carousel3DAnimation} />
       </Stack.Navigator>
     </View>
   )
