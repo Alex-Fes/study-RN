@@ -45,6 +45,14 @@ export const Home = () => {
         onPress={() => navigate('Carouse3DlAnimation')}
         style={styles.button}
       />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'StickyFooter'}
+        onPress={() => navigate('StickyFooter')}
+        style={styles.button}
+      />
     </View>
   )
 }

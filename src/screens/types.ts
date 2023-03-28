@@ -6,6 +6,7 @@ export type RootStackType = {
   ScrollItemAnimation: undefined
   CarouselAnimation: undefined
   Carouse3DlAnimation: undefined
+  StickyFooter: undefined
 }
 type UseNavigationType = NavigationProp<RootStackType>
 export const useAppNavigation = () => useNavigation<UseNavigationType>()

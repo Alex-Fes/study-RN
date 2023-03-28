@@ -7,6 +7,7 @@ import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
 import { Home } from './Home'
 import { ScrollItemAnimation } from './ScrollItemAnimation/ScrollItemAnimation'
+import { StickyFooter } from './StickyFooter/StickyFooter'
 import { SyncedFlatLists } from './SyncedFlatLists/SyncedFlatLists'
 import { RootStackType } from './types'
 
@@ -21,6 +22,7 @@ export const Main = () => {
         <Stack.Screen name={'ScrollItemAnimation'} component={ScrollItemAnimation} />
         <Stack.Screen name={'CarouselAnimation'} component={CarouselAnimation} />
         <Stack.Screen name={'Carouse3DlAnimation'} component={Carousel3DAnimation} />
+        <Stack.Screen name={'StickyFooter'} component={StickyFooter} />
       </Stack.Navigator>
     </View>
   )
