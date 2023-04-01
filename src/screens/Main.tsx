@@ -5,6 +5,7 @@ import { StyleSheet, View } from 'react-native'
 
 import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
+import { CountdownTimerAnimation } from './CountdownTimerAnimation/CountdownTimerAnimation'
 import { Home } from './Home'
 import { ScrollItemAnimation } from './ScrollItemAnimation/ScrollItemAnimation'
 import { StickyFooter } from './StickyFooter/StickyFooter'
@@ -23,6 +24,7 @@ export const Main = () => {
         <Stack.Screen name={'CarouselAnimation'} component={CarouselAnimation} />
         <Stack.Screen name={'Carouse3DlAnimation'} component={Carousel3DAnimation} />
         <Stack.Screen name={'StickyFooter'} component={StickyFooter} />
+        <Stack.Screen name={'CountdownTimerAnimation'} component={CountdownTimerAnimation} />
       </Stack.Navigator>
     </View>
   )
