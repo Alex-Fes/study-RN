@@ -5,6 +5,7 @@ import { StyleSheet, View } from 'react-native'
 import { Button } from '../common/Button'
 import { PADDING, WIDTH } from '../constants/constants'
 
+import { AdvancedCarousel } from './AdvancedCarousel/AdvancedCarousel'
 import { SyncedFlatLists } from './SyncedFlatLists/SyncedFlatLists'
 import { useAppNavigation } from './types'
 
@@ -59,6 +60,14 @@ export const Home = () => {
         fontWeight={'500'}
         title={'CountdownTimerAnimation'}
         onPress={() => navigate('CountdownTimerAnimation')}
+        style={styles.button}
+      />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'AdvancedCarousel'}
+        onPress={() => navigate('AdvancedCarousel')}
         style={styles.button}
       />
     </View>

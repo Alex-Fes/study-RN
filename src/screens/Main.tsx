@@ -3,6 +3,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StyleSheet, View } from 'react-native'
 
+import { AdvancedCarousel } from './AdvancedCarousel/AdvancedCarousel'
 import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
 import { CountdownTimerAnimation } from './CountdownTimerAnimation/CountdownTimerAnimation'
@@ -25,6 +26,7 @@ export const Main = () => {
         <Stack.Screen name={'Carouse3DlAnimation'} component={Carousel3DAnimation} />
         <Stack.Screen name={'StickyFooter'} component={StickyFooter} />
         <Stack.Screen name={'CountdownTimerAnimation'} component={CountdownTimerAnimation} />
+        <Stack.Screen name={'AdvancedCarousel'} component={AdvancedCarousel} />
       </Stack.Navigator>
     </View>
   )
