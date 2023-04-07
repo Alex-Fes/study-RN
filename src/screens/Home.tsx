@@ -70,6 +70,14 @@ export const Home = () => {
         onPress={() => navigate('AdvancedCarousel')}
         style={styles.button}
       />
+      <Button
+        fontSize={24}
+        color={'rgba(50,142,218,0.73)'}
+        fontWeight={'500'}
+        title={'ParallaxCarousel'}
+        onPress={() => navigate('ParallaxCarousel')}
+        style={styles.button}
+      />
     </View>
   )
 }

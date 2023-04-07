@@ -8,6 +8,7 @@ import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
 import { CountdownTimerAnimation } from './CountdownTimerAnimation/CountdownTimerAnimation'
 import { Home } from './Home'
+import { ParallaxCarousel } from './ParallaxCarousel/ParallaxCarousel'
 import { ScrollItemAnimation } from './ScrollItemAnimation/ScrollItemAnimation'
 import { StickyFooter } from './StickyFooter/StickyFooter'
 import { SyncedFlatLists } from './SyncedFlatLists/SyncedFlatLists'
@@ -27,6 +28,7 @@ export const Main = () => {
         <Stack.Screen name={'StickyFooter'} component={StickyFooter} />
         <Stack.Screen name={'CountdownTimerAnimation'} component={CountdownTimerAnimation} />
         <Stack.Screen name={'AdvancedCarousel'} component={AdvancedCarousel} />
+        <Stack.Screen name={'ParallaxCarousel'} component={ParallaxCarousel} />
       </Stack.Navigator>
     </View>
   )
