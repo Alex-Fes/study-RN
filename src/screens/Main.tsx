@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StyleSheet, View } from 'react-native'
 
 import { AdvancedCarousel } from './AdvancedCarousel/AdvancedCarousel'
+import { AdvancedFlatListCarousel } from './AdvancedFlatListCarousel/AdvancedFlatListCarousel'
 import { Carousel3DAnimation } from './Carouse3DlAnimation/3DCarouselAnimation'
 import { CarouselAnimation } from './CarouselAnimation/CarouselAnimation'
 import { CountdownTimerAnimation } from './CountdownTimerAnimation/CountdownTimerAnimation'
@@ -29,6 +30,7 @@ export const Main = () => {
         <Stack.Screen name={'CountdownTimerAnimation'} component={CountdownTimerAnimation} />
         <Stack.Screen name={'AdvancedCarousel'} component={AdvancedCarousel} />
         <Stack.Screen name={'ParallaxCarousel'} component={ParallaxCarousel} />
+        <Stack.Screen name={'AdvancedFlatListCarousel'} component={AdvancedFlatListCarousel} />
       </Stack.Navigator>
     </View>
   )
