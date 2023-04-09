@@ -80,11 +80,9 @@ const Backdrop = ({ scrollX }: any) => {
   const backgroundColor = scrollX.interpolate({
     inputRange: bgs.map((_, i) => i * width),
     outputRange: bgs.map(bg => bg),
-  }) // if use it in Animated.View would be throw error 'exception thrown while executing ui block index 0 beyond bounds for empty array'
+  })
 
-  // console.log(backgroundColor)
-
-  return <Animated.View style={[StyleSheet.absoluteFillObject, { backgroundColor: bgs[0] }]} />
+  return <Animated.View style={[StyleSheet.absoluteFillObject, { backgroundColor }]} />
 }
 
 const Square = ({ scrollX }: any) => {
@@ -150,7 +148,7 @@ export const AdvancedFlatListCarousel = () => {
         horizontal={true}
         scrollEventThrottle={32}
         onScroll={Animated.event([{ nativeEvent: { contentOffset: { x: scrollX } } }], {
-          useNativeDriver: true,
+          useNativeDriver: false,
         })}
         contentContainerStyle={{ paddingBottom: 100 }}
         showsHorizontalScrollIndicator={false}
