@@ -74,6 +74,7 @@ export const CarouselAnimation = () => {
         renderItem={renderItem}
         keyExtractor={(_, index) => index.toString()}
         horizontal={true}
+        pagingEnabled={true}
       />
     </View>
   )
